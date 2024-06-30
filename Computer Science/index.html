@@ -15,14 +15,14 @@
                 <h1>My Portfolio</h1>
                 <section class="navbar">
                     <ul>
-                        <li><a href="">Introduction</a></li>
-                        <li><a href="">Projects</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a id="introductionButton">Introduction</a></li>
+                        <li><a id="projectButton">Projects</a></li>
+                        <li><a id="contactButton">Contact</a></li>
                     </ul>
                 </section>
             </section>
         </header>
-        <section class="section introduction">
+        <section id="introductionSection" class="section introduction">
             <section class="user">
                 <h4>HI! I AM</h4>
                 <img id="pfp" src="images/pfp.jpg" alt="">
@@ -33,7 +33,7 @@
                 STEP Academy, where I learned basic programming skills as long as working with 3d modeling software,
                 photo redactors, robotics etc.</h1>
         </section>
-        <section class="section projects">
+        <section id="projectSection" class="section projects">
             <h1 class="section-name">Projects</h1>
             <section class="project">
                 <h1 class="project-name">Project: Web Calculator App</h1>
@@ -82,7 +82,7 @@
                 </div>
             </section>
         </section>
-        <section class="section contacts">
+        <section id="contactSection" class="section contacts">
             <h1 class="section-name">Contacts</h1>
             <ul>
                 <li>Phone: +4915234640640</li>
@@ -92,6 +92,25 @@
                 <li>GitHub: <a href="https://github.com/timurenk0">github.com/timurenk0</a></li>
             </ul>
         </section>
+
+        <script>
+            document.getElementById('introductionButton').addEventListener('click', () => {
+                document.getElementById('introductionSection').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+            document.getElementById('projectButton').addEventListener('click', () => {
+                document.getElementById('projectSection').scrollIntoView({
+                    behavior: 'smooth'
+                })
+            })
+            document.getElementById('contactButton').addEventListener('click', () => {
+                document.getElementById('contactSection').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        </script>
+
     </div>
 </body>
 
