@@ -10,6 +10,10 @@ body {
     min-height: 100vh;
 }
 
+a {
+    color: white;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -47,7 +51,6 @@ body {
 }
 
 .navbar li a {
-    color: white;
     text-decoration: underline;
     display: block;
     cursor: pointer;
@@ -133,8 +136,4 @@ body {
 
 .contacts li {
     padding: 5px 0;
-}
-
-a {
-    color: white;
 }
